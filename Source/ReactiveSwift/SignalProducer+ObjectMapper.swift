@@ -1,4 +1,7 @@
 import Moya
+#if !COCOAPODS
+import MoyaObjectMapper
+#endif
 import ObjectMapper
 import ReactiveSwift
 
