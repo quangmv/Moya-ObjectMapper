@@ -1,16 +1,15 @@
-import ReactiveSwift
 import Moya
 import ObjectMapper
+import ReactiveSwift
 
 /// Extension for processing Responses into Mappable objects through ObjectMapper
 extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaError {
-
     /// Maps data received from the signal into an object which implements the Mappable protocol.
     /// If the conversion fails, the signal errors.
     public func mapObject<T: BaseMappable>(_ type: T.Type, context: MapContext? = nil) -> SignalProducer<T, MoyaError> {
         return producer.flatMap(.latest) {
             (response: Response) -> SignalProducer<T, Error> in
-            return unwrapThrowable { try response.mapObject(type, context: context) }
+            unwrapThrowable { try response.mapObject(type, context: context) }
         }
     }
 
@@ -19,16 +18,16 @@ extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaErro
     /// If the conversion fails, the signal errors.
     public func mapArray<T: BaseMappable>(_ type: T.Type, context: MapContext? = nil) -> SignalProducer<[T], MoyaError> {
         return producer.flatMap(.latest) { (response: Response) -> SignalProducer<[T], Error> in
-            return unwrapThrowable { try response.mapArray(type, context: context) }
+            unwrapThrowable { try response.mapArray(type, context: context) }
         }
     }
 
     /// Maps data received from the signal into an object which implements the Mappable protocol.
     /// If the conversion fails, the signal errors.
-  public func mapObject<T: BaseMappable>(_ type: T.Type, atKeyPath keyPath: String, context: MapContext? = nil) -> SignalProducer<T, MoyaError> {
+    public func mapObject<T: BaseMappable>(_ type: T.Type, atKeyPath keyPath: String, context: MapContext? = nil) -> SignalProducer<T, MoyaError> {
         return producer.flatMap(.latest) {
             (response: Response) -> SignalProducer<T, Error> in
-          return unwrapThrowable { try response.mapObject(type, atKeyPath: keyPath, context: context) }
+            unwrapThrowable { try response.mapObject(type, atKeyPath: keyPath, context: context) }
         }
     }
 
@@ -37,7 +36,7 @@ extension SignalProducerProtocol where Value == Moya.Response, Error == MoyaErro
     /// If the conversion fails, the signal errors.
     public func mapArray<T: BaseMappable>(_ type: T.Type, atKeyPath keyPath: String, context: MapContext? = nil) -> SignalProducer<[T], MoyaError> {
         return producer.flatMap(.latest) { (response: Response) -> SignalProducer<[T], Error> in
-            return unwrapThrowable { try response.mapArray(type, atKeyPath: keyPath, context: context) }
+            unwrapThrowable { try response.mapArray(type, atKeyPath: keyPath, context: context) }
         }
     }
 }
