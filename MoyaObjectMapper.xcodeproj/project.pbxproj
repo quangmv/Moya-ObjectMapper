@@ -19,10 +19,10 @@
 		00B0E1DB23B226EE0011101F /* MoyaObjectMapperReactiveSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B0E15123B13DFC0011101F /* MoyaObjectMapperReactiveSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00B0E1DC23B226F10011101F /* MoyaObjectMapperRxSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B0E15E23B13E140011101F /* MoyaObjectMapperRxSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00B0E1E223B229440011101F /* MoyaObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0E13723B13BEA0011101F /* MoyaObjectMapper.framework */; };
-		00B0E1EB23B229870011101F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0E1E723B229870011101F /* ReactiveSwift.framework */; };
-		00B0E1ED23B229870011101F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0E1E823B229870011101F /* ReactiveSwift.framework */; };
-		00B0E1EF23B229870011101F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0E1E923B229870011101F /* ReactiveSwift.framework */; };
-		00B0E1F123B229870011101F /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B0E1EA23B229870011101F /* ReactiveSwift.framework */; };
+		00E4961D23B26F590090435D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E4961923B26F590090435D /* ReactiveSwift.framework */; };
+		00E4961F23B26F590090435D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E4961A23B26F590090435D /* ReactiveSwift.framework */; };
+		00E4962123B26F590090435D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E4961B23B26F590090435D /* ReactiveSwift.framework */; };
+		00E4962323B26F590090435D /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E4961C23B26F590090435D /* ReactiveSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +80,10 @@
 		00B0E1E823B229870011101F /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B0E1E923B229870011101F /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B0E1EA23B229870011101F /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E4961923B26F590090435D /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E4961A23B26F590090435D /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E4961B23B26F590090435D /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E4961C23B26F590090435D /* ReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +101,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B0E1E223B229440011101F /* MoyaObjectMapper.framework in Frameworks */,
-				00B0E1EB23B229870011101F /* ReactiveSwift.framework in Frameworks */,
-				00B0E1F123B229870011101F /* ReactiveSwift.framework in Frameworks */,
-				00B0E1ED23B229870011101F /* ReactiveSwift.framework in Frameworks */,
-				00B0E1EF23B229870011101F /* ReactiveSwift.framework in Frameworks */,
+				00E4961D23B26F590090435D /* ReactiveSwift.framework in Frameworks */,
+				00E4962323B26F590090435D /* ReactiveSwift.framework in Frameworks */,
+				00E4961F23B26F590090435D /* ReactiveSwift.framework in Frameworks */,
+				00E4962123B26F590090435D /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +165,10 @@
 		00B0E16823B209250011101F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00E4961923B26F590090435D /* ReactiveSwift.framework */,
+				00E4961A23B26F590090435D /* ReactiveSwift.framework */,
+				00E4961B23B26F590090435D /* ReactiveSwift.framework */,
+				00E4961C23B26F590090435D /* ReactiveSwift.framework */,
 				00B0E1E723B229870011101F /* ReactiveSwift.framework */,
 				00B0E1E823B229870011101F /* ReactiveSwift.framework */,
 				00B0E1E923B229870011101F /* ReactiveSwift.framework */,
@@ -546,7 +554,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,7 +586,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
