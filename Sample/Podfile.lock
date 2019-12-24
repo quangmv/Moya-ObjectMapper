@@ -46,8 +46,8 @@ DEPENDENCIES:
   - Moya-ObjectMapper (from `../`)
   - Moya-ObjectMapper/ReactiveSwift (from `../`)
   - Moya-ObjectMapper/RxSwift (from `../`)
-  - Moya/ReactiveSwift
-  - Moya/RxSwift
+  - Moya/ReactiveSwift (~> 14.0.0-beta.6)
+  - Moya/RxSwift (~> 14.0.0-beta.6)
   - ObjectMapper
   - ReactiveCocoa
   - ReactiveSwift
@@ -88,6 +88,6 @@ SPEC CHECKSUMS:
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: a54ee9026cab0878d85c2ed1207e4e7c44ad070e
+PODFILE CHECKSUM: fa9980cee0ad594a3b703ffdf4ed27eecddd97ab
 
 COCOAPODS: 1.8.4

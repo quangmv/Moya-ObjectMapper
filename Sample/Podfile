@@ -9,7 +9,7 @@ end
 
 def libraries_rx_swift
   pod 'Moya-ObjectMapper/RxSwift', :path => "../"
-  pod 'Moya/RxSwift'
+  pod 'Moya/RxSwift', '~> 14.0.0-beta.6'
   pod 'RxSwift' #, :git => 'https://github.com/ReactiveX/RxSwift'
   pod 'RxDataSources'
   pod 'RxCocoa'
@@ -18,7 +18,7 @@ end
 
 def libraries_reactive_swift
   pod 'Moya-ObjectMapper/ReactiveSwift', :path => "../"
-  pod 'Moya/ReactiveSwift'
+  pod 'Moya/ReactiveSwift', '~> 14.0.0-beta.6'
   pod 'ReactiveCocoa'
   pod 'ReactiveSwift'
 end
